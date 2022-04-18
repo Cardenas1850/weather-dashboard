@@ -14,7 +14,7 @@ let uvIndexEl = document.createElement("uv");
 let todayWeatherEl = document.getElementById("today-weather");
 let cityHistory = document.getElementById("city-history");
 let deleteBtnEl = document.getElementById("delete-btn");
-//API key
+//API keys
 let apiKey = "e1678151ac2117c3ce8405f408aeec0a"
     // function that will allow a user to search for the weather forecast via created url from api
 
