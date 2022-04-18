@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,45 +9,47 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <!-- header for dashboard-->
     <header>
-      <h1>Weather Dashboard</h1>
+        <h1>Weather Dashboard</h1>
     </header>
 
     <!-- main container for weather information, city serach area, and daily forecast -->
-<main class="container-fluid">
-    <div class="row">
-        <p>Search for a city</p>
-        <input type="text" placeholder="Search for a city" aria-label="Search for a city">
-    </div>
-    <div>
-        <!-- buttons to search and delete searched cities-->
-        <p>By searching your city, you will be able to see a 5 day weather forecast along with the current weather and specific information including temp, wind speed, and humidity .</p>
-        <button id="search-button" href="#" class="btn-primary">Search</button>
-    </div>
-    <div>
-        <!-- list of searched cities -->
-        <form>
-        </form>
-        <button class="" type="button" id="">Delete History</button>
-    </div>
-    <!-- weather information-->
-    <div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <!--five day weather forecast-->
-    <div class="row">
-        <div class="col-md-2">1</div>
-        <div class="col-md-2">2</div>
-        <div class="col-md-2">3</div>
-        <div class="col-md-2">4</div>
-        <div class="col-md-2">5</div>
-    </div>
+    <main class="container-fluid">
+        <div class="row">
+            <p>Search for a city</p>
+            <input type="text" placeholder="Search for a city" aria-label="Search for a city" id="city-serach">
+        </div>
+        <div>
+            <!-- buttons to search and delete searched cities-->
+            <p>By searching your city, you will be able to see a 5 day weather forecast along with the current weather and specific information including temp, wind speed, and humidity .</p>
+            <button id="search-button" href="#" class="btn-primary">Search</button>
+        </div>
+        <div>
+            <!-- list of searched cities -->
+            <form>
+            </form>
+            <button class="" type="button" id="delete-button">Delete History</button>
+        </div>
+        <!-- weather information-->
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!--five day weather forecast-->
+        <div class="row">
+            <div class="col-md-2">1</div>
+            <div class="col-md-2">2</div>
+            <div class="col-md-2">3</div>
+            <div class="col-md-2">4</div>
+            <div class="col-md-2">5</div>
+        </div>
 
-</main>
-<script src="./assets//js/script.js"></script>
+    </main>
+    <script src="./assets//js/script.js"></script>
 </body>
+
 </html>
