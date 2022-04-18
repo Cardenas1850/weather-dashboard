@@ -29,14 +29,21 @@
         </div>
         <div>
             <!-- list of searched cities -->
-            <form>
+            <form id="city-history">
             </form>
             <button class="" type="button" id="delete-button">Delete History</button>
         </div>
         <!-- weather information-->
         <div>
-            <div></div>
-            <div></div>
+            <div class="col 12 m-2 card d-none"></div>
+            <div class="card-body">
+                <h3 id="city-name"></h3>
+                <img id="icon" alt="icon of weather">
+                <p id="temp"></p>
+                <p id="humidity"></p>
+                <p id="wind-speed"></p>
+                <p id="uv"></p>
+            </div>
             <div></div>
         </div>
         <!--five day weather forecast-->
