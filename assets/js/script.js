@@ -3,21 +3,22 @@ let weatherData = {};
 let allWeatherData = {};
 
 //DOM variables
-let cityEl = doucment.getElementById("city-search");
-let serachEl = doucment.getElementById("serach-btn");
-let iconEl = doucment.getElementById("icon");
-let cityNameEl = doucment.getElementById("city-name");
-let tempElj = document.createElement("temp");
+let cityEl = document.getElementById("city-input");
+let searchEl = document.getElementById("search-button");
+let currentIconEl = document.getElementById("weather-icon");
+let cityNameEl = document.getElementById("city-given");
+let tempEl = document.getElementById("temp");
 let humidityEl = document.getElementById("humidity");
-let windSpeedEl = document.getElementById("wind-speed");
-let uvIndexEl = document.createElement("uv");
-let todayWeatherEl = document.getElementById("today-weather");
-let cityHistory = document.getElementById("city-history");
-let deleteBtnEl = document.getElementById("delete-btn");
+let windspeedEl = document.getElementById("windspeed");
+let uvIndexEl = document.getElementById("uv-index");
+let currentWeatherEl = document.getElementById("current-weather");
+let fiveDayHeadEl = document.getElementById("five-day-header");
+let historyEl =  document.getElementById("history");
+let serachHistory = JSON.parse(localStorage.getItem("search")) || [];
+let deleteBtnEl = document.getElementById("clear-history");
 //API keys
 let apiKey = "e1678151ac2117c3ce8405f408aeec0a"
     // function that will allow a user to search for the weather forecast via created url from api
-
 
 //function that use geocoding api to convert lat and long to city name
 
