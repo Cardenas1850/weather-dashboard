@@ -1,62 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Weather Dashboard </title>
 </head>
 
 <body>
     <!-- header for dashboard-->
-    <header>
-        <h1>Weather Dashboard</h1>
+    <header class="container-fluid text-center text-white bg-success h-100 p-2">
+        <h1> Weather Dashboard </h1>
     </header>
 
     <!-- main container for weather information, city serach area, and daily forecast -->
-    <main class="container-fluid">
+    <main class="container-fluid bg-light">
+
         <div class="row">
-            <p>Search for a city</p>
-            <input type="text" placeholder="Search for a city" aria-label="Search for a city" id="city-serach">
-        </div>
-        <div>
-            <!-- buttons to search and delete searched cities-->
-            <p>By searching your city, you will be able to see a 5 day weather forecast along with the current weather and specific information including temp, wind speed, and humidity .</p>
-            <button id="search-button" href="#" class="btn-primary">Search</button>
-        </div>
-        <div>
-            <!-- list of searched cities -->
-            <form id="city-history">
-            </form>
-            <button class="" type="button" id="delete-button">Delete History</button>
-        </div>
-        <!-- weather information-->
-        <div>
-            <div class="col 12 m-2 card d-none" id="today-weather"></div>
-            <div class="card-body">
-                <h3 id="city-name"></h3>
-                <img id="icon" alt="icon of weather">
-                <p id="temp"></p>
-                <p id="humidity"></p>
-                <p id="wind-speed"></p>
-                <p id="uv"></p>
+            <div class="m-2 card col-lg-3" style="width: 25rem;">
+                <p class="fs-3 fw-bold">Search for a city</p>
+                <input id="city-input" class="border-success" type="text" placeholder="Enter a city" aria-label="Enter a city">
+                <div class="card-body">
+                    <p class="card-text">Enter a city to get weather information</p>
+                    <a id="search-button" href="#" class="btn btn-success btn-lg">Search</a>
+                </div>
+                <div calss="d-flex flex-column">
+                    <form id="history"></form>
+                    <button class="btn btn-success m2-2 d-none" type="button" id="clear-history">Clear</button>
+                </div>
             </div>
-            <div></div>
+            <div class="col-lg-8">
+                <div class="col-12">
+                    <div class="row mr-0">
+                        <div class="col-12 m-2 card d-none" id="current-weather">
+                            <div class="card-body">
+                                <h3 id="city-given" class="fw-bold"></h3>
+                                <img id="weather-icon" alt="">
+                                <p id="temp"></p>
+                                <p id="humidity"></p>
+                                <p id="wind-speed"></p>
+                                <p id="uv-index"></p>
+                            </div>
+                        </div>
+                        <div class="row d-none" id="five-day-header">
+                            <div class="col-12">
+                                <h3 class="col-12 font-weight-bold bg-white border p-3">Five Day forecast</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 five-day bg-success m-2 "></div>
+                                <div class="col-md-2 five-day bg-success m-2 "></div>
+                                <div class="col-md-2 five-day bg-success m-2 "></div>
+                                <div class="col-md-2 five-day bg-success m-2 "></div>
+                                <div class="col-md-2 five-day bg-success m-2 "></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--five day weather forecast-->
-        <div class="row">
-            <div class="col-md-2">1</div>
-            <div class="col-md-2">2</div>
-            <div class="col-md-2">3</div>
-            <div class="col-md-2">4</div>
-            <div class="col-md-2">5</div>
-        </div>
-
     </main>
-    <script src="./assets//js/script.js"></script>
-</body>
+        <script src="./assets/js/script.js"></script>
+    </body>
 
-</html>
+    </html> 
